@@ -8,7 +8,7 @@ VCARD_FOLDER = "vcards"
 DATA_FILE = "contacts.json"
 
 TWILIO_SID = "AC3da2934b4ac8d9078cf1d9d0e206af6e"
-TWILIO_TOKEN = "81ed71aff32eceabd9a6858fde0da7f1"
+TWILIO_TOKEN = "8b2f56cdd864cc0c404f3fbd45066cdd"
 TWILIO_NUMBER = "whatsapp:+14155238886"
 
 if not os.path.exists(DATA_FILE):
