@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>View Virtual Card</title></head>
+<body>
+<h2>{{ contact.name }}</h2>
+<p>📞 {{ contact.phone }}</p>
+<p>📧 {{ contact.email }}</p>
+<a href="/vcards/{{ contact.id }}.vcf">📇 Add to Contact</a><br><br>
+<a href="/exchange/{{ contact.id }}">🔁 Exchange Contact</a>
+</body>
+</html>
