@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head><title>Exchange Contact</title></head>
+<head>
+    <title>Exchange Contact</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h2 {
+            color: #03dac6;
+            margin-bottom: 1.5rem;
+        }
+        form {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0 1.5rem 0;
+            background-color: #2d2d2d;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #018786;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: 500;
+        }
+        button:hover {
+            background-color: #03dac6;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
 <body>
-<h2>Send Your Contact Info</h2>
-<form method="post">
-  Your Name: <input name="name"><br>
-  Your Phone: <input name="phone"><br>
-  Your Email: <input name="email"><br>
-  <button type="submit">Exchange Contact</button>
-</form>
+    <form method="post">
+        <h2>Send Your Contact Info</h2>
+        
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="phone">Your Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Exchange Contact</button>
+    </form>
 </body>
 </html>
